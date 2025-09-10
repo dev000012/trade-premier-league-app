@@ -14,6 +14,11 @@ const Home = () => {
           <button className="hero-button">
             <span className="button-text">Join Now</span>
           </button>
+          <div className="hero-dots">
+            <div className="dot active"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
         </div>
       </div>
 
@@ -21,11 +26,6 @@ const Home = () => {
       <div className="profile-section">
         <div className="profile-avatar">
           <img src="/assets/profile-avatar.png" alt="Profile Avatar" />
-        </div>
-        <div className="profile-dots">
-          <div className="dot active"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
         </div>
       </div>
 

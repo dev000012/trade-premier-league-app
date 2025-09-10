@@ -8,10 +8,7 @@ const Header = () => {
         {/* Profile Picture - Frame 1707481348 */}
         <div className="profile-section">
           <div className="profile-avatar">
-            <img
-              src="/assets/profile-avatar-figma.png"
-              alt="Profile Avatar"
-            />
+            <img src="/assets/profile-avatar-figma.png" alt="Profile Avatar" />
           </div>
         </div>
 
