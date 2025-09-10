@@ -9,7 +9,7 @@ const Header = () => {
         <div className="profile-section">
           <div className="profile-avatar">
             <img
-              src="/src/assets/profile-avatar-figma.png"
+              src="/assets/profile-avatar-figma.png"
               alt="Profile Avatar"
             />
           </div>
@@ -18,17 +18,17 @@ const Header = () => {
         {/* Golden Badge - Frame 4 */}
         <div className="badge-section">
           <div className="badge-icon">
-            <img src="/src/assets/golden-badge-figma.svg" alt="Golden Badge" />
+            <img src="/assets/golden-badge-figma.svg" alt="Golden Badge" />
           </div>
         </div>
 
         {/* Wallet Section - Frame 1707481349 */}
         <div className="wallet-section">
           <div className="wallet-icon">
-            <img src="/src/assets/wallet-icon-figma.svg" alt="Wallet" />
+            <img src="/assets/wallet-icon-figma.svg" alt="Wallet" />
           </div>
           <div className="rupee-icon">
-            <img src="/src/assets/rupee-icon-figma.svg" alt="Rupee" />
+            <img src="/assets/rupee-icon-figma.svg" alt="Rupee" />
           </div>
           <div className="wallet-amount">
             <span>20,000</span>
@@ -39,7 +39,7 @@ const Header = () => {
         <div className="notification-section">
           <button className="notification-bell">
             <img
-              src="/src/assets/notification-bell-figma.svg"
+              src="/assets/notification-bell-figma.svg"
               alt="Notification Bell"
             />
           </button>
