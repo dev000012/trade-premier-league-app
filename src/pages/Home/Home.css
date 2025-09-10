@@ -1,0 +1,519 @@
+.home {
+  padding: 0 15px 20px;
+  max-width: 390px;
+  margin: 0 auto;
+  min-height: calc(100vh - 109px);
+  position: relative;
+}
+
+/* Hero Card */
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 177px;
+  background: rgba(28, 33, 39, 0.68);
+  border-radius: 16px;
+  margin: 16px 0 24px;
+  overflow: hidden;
+  box-shadow: 0px 8px 24px -4px rgba(10, 9, 13, 0.04), 0px 6px 12px -6px rgba(10, 9, 13, 0.08);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 16px;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.071;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  color: #FFFFFF;
+}
+
+.hero-button {
+  background: #1C2127;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.hero-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.hero-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(28, 33, 39, 0.3);
+}
+
+.button-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.profile-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #FFFFFF;
+  padding: 2px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #859AB7;
+}
+
+.dot.active {
+  background-color: #1C2127;
+}
+
+/* Challenges Header */
+.challenges-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.challenges-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #1C2127;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  color: #1C2127;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Challenges List */
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.challenge-card {
+  background: rgba(99, 113, 129, 0.14);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.challenge-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.challenge-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
+}
+
+.challenge-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #1C2127;
+}
+
+.challenge-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-badge {
+  background: #FFFFFF;
+  color: #212121;
+  border-radius: 8px;
+  padding: 5px 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+}
+
+.info-button {
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  color: #1C2127;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.challenge-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  border-radius: 8px;
+  padding: 5px 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+}
+
+.tag.weekly {
+  background: rgba(185, 96, 114, 0.1);
+  color: #B96072;
+}
+
+.tag.beginner {
+  background: rgba(115, 60, 138, 0.1);
+  color: #733C8A;
+}
+
+.tag.intermediate {
+  background: rgba(115, 60, 138, 0.1);
+  color: #733C8A;
+}
+
+.tag.nifty {
+  background: rgba(28, 33, 39, 0.1);
+  color: #1C2127;
+}
+
+.challenge-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.challenge-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.prize-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prize-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.prize-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.prize-amount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.prize-icon-small {
+  width: 18px;
+  height: 18px;
+}
+
+.prize-icon-small img {
+  width: 100%;
+  height: 100%;
+}
+
+.amount {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #212121;
+}
+
+.join-button {
+  background: #1C2127;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.join-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.join-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(28, 33, 39, 0.3);
+}
+
+.join-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.join-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.join-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.join-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.price {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #FFFFFF;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #8B97A7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #1C2127;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #1C2127;
+  text-transform: uppercase;
+}
+
+.bonus-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #FDFBE8;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.loyalty-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.bonus-text {
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.088;
+  color: #1C2127;
+  text-transform: uppercase;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 390px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 8px 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 0 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.nav-item.active {
+  color: #1C2127;
+}
+
+.nav-item:not(.active) {
+  color: #A9A9A9;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .home {
+    padding: 0 10px 20px;
+  }
+  
+  .challenge-title-section {
+    gap: 40px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+}

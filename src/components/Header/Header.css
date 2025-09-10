@@ -1,0 +1,259 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #1C2127 0%, #637181 100%);
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+/* Status Bar */
+.status-bar {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.status-bar-content {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17px;
+}
+
+.time {
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.088;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
+
+.status-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Signal Bars */
+.signal-bars {
+  display: flex;
+  align-items: end;
+  gap: 3px;
+  height: 10px;
+}
+
+.bar {
+  width: 3px;
+  background-color: #FFFFFF;
+  border-radius: 1.5px;
+}
+
+.bar:nth-child(1) { height: 4px; }
+.bar:nth-child(2) { height: 6px; }
+.bar:nth-child(3) { height: 8px; }
+.bar:nth-child(4) { height: 10px; }
+
+/* WiFi Icon */
+.wifi-icon {
+  position: relative;
+  width: 16px;
+  height: 11px;
+}
+
+.wifi-bar {
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+
+.wifi-bar:nth-child(1) {
+  width: 16px;
+  height: 5px;
+  top: 0;
+  left: 0;
+}
+
+.wifi-bar:nth-child(2) {
+  width: 12px;
+  height: 4.5px;
+  top: 4px;
+  left: 2px;
+}
+
+.wifi-signal {
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  top: 7px;
+  left: 4.5px;
+  background-color: #FFFFFF;
+  border-radius: 0 0 3.5px 3.5px;
+}
+
+/* Battery */
+.battery {
+  position: relative;
+  width: 23px;
+  height: 11px;
+}
+
+.battery-body {
+  width: 21px;
+  height: 11px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  position: relative;
+}
+
+.battery-fill {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 7px;
+  background-color: #FFFFFF;
+  border-radius: 1px;
+}
+
+.battery-tip {
+  position: absolute;
+  right: -2px;
+  top: 2px;
+  width: 1px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 0 1px 1px 0;
+}
+
+/* Main Header */
+.header-main {
+  padding: 15px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.back-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #FFFFFF;
+  border-radius: 17px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 2px;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-button-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.back-button-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wallet-icon {
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+}
+
+.wallet-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.wallet-amount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.amount {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #FFFFFF;
+}
+
+.rupee-icon {
+  width: 18px;
+  height: 18px;
+  color: #FFFFFF;
+}
+
+.rupee-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.notification-bell {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.notification-bell:hover {
+  color: #FFC107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .header-content {
+    padding: 0 10px;
+  }
+  
+  .page-title {
+    font-size: 16px;
+  }
+}
