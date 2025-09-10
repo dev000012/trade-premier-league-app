@@ -4,60 +4,45 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      {/* Status Bar */}
-      <div className="status-bar">
-        <div className="status-bar-content">
-          <span className="time">08:48</span>
-          <div className="status-icons">
-            <div className="signal-bars">
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-            <div className="wifi-icon">
-              <div className="wifi-bar"></div>
-              <div className="wifi-bar"></div>
-              <div className="wifi-signal"></div>
-            </div>
-            <div className="battery">
-              <div className="battery-body">
-                <div className="battery-fill"></div>
-              </div>
-              <div className="battery-tip"></div>
-            </div>
+      <div className="header-content">
+        {/* Profile Picture - Frame 1707481348 */}
+        <div className="profile-section">
+          <div className="profile-avatar">
+            <img
+              src="/src/assets/profile-avatar-figma.png"
+              alt="Profile Avatar"
+            />
           </div>
         </div>
-      </div>
 
-      {/* Main Header Content */}
-      <div className="header-main">
-        <div className="header-content">
-          {/* Back Button */}
-          <button className="back-button">
-            <div className="back-button-avatar">
-              <img src="/assets/profile-avatar.png" alt="Profile Avatar" />
-            </div>
-          </button>
-
-          {/* Page Title */}
-          <h1 className="page-title">Challenges</h1>
-
-          {/* Wallet Info */}
-          <div className="wallet-info">
-            <div className="wallet-icon">
-              <img src="/assets/wallet-icon.svg" alt="Wallet" />
-            </div>
-            <div className="wallet-amount">
-              <div className="rupee-icon">
-                <img src="/assets/rupee-icon-header.svg" alt="Rupee" />
-              </div>
-              <span className="amount">20,000</span>
-            </div>
-            <div className="wallet-icon">
-              <img src="/assets/wallet-icon.svg" alt="Wallet" />
-            </div>
+        {/* Golden Badge - Frame 4 */}
+        <div className="badge-section">
+          <div className="badge-icon">
+            <img src="/src/assets/golden-badge-figma.svg" alt="Golden Badge" />
           </div>
+        </div>
+
+        {/* Wallet Section - Frame 1707481349 */}
+        <div className="wallet-section">
+          <div className="wallet-icon">
+            <img src="/src/assets/wallet-icon-figma.svg" alt="Wallet" />
+          </div>
+          <div className="rupee-icon">
+            <img src="/src/assets/rupee-icon-figma.svg" alt="Rupee" />
+          </div>
+          <div className="wallet-amount">
+            <span>20,000</span>
+          </div>
+        </div>
+
+        {/* Notification Bell - from Status Bar */}
+        <div className="notification-section">
+          <button className="notification-bell">
+            <img
+              src="/src/assets/notification-bell-figma.svg"
+              alt="Notification Bell"
+            />
+          </button>
         </div>
       </div>
     </header>
