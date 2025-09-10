@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="home">
       {/* Hero Card */}
@@ -173,25 +180,31 @@ const Home = () => {
 
       {/* Bottom Navigation */}
       <nav className="bottom-nav">
-        <div className="nav-item active">
+        <div className="nav-item active" onClick={() => handleNavigation("/")}>
           <div className="nav-icon">
             <img src="/assets/challenges-icon.svg" alt="Challenges" />
           </div>
           <span className="nav-label">Challenges</span>
         </div>
-        <div className="nav-item">
+        <div
+          className="nav-item"
+          onClick={() => handleNavigation("/my-challenges")}
+        >
           <div className="nav-icon">
             <img src="/assets/my-challenges-icon.svg" alt="My Challenges" />
           </div>
           <span className="nav-label">My Challenges</span>
         </div>
-        <div className="nav-item">
+        <div
+          className="nav-item"
+          onClick={() => handleNavigation("/leaderboard")}
+        >
           <div className="nav-icon">
             <img src="/assets/leaderboard-icon.svg" alt="Leaderboard" />
           </div>
           <span className="nav-label">Leaderboard</span>
         </div>
-        <div className="nav-item">
+        <div className="nav-item" onClick={() => handleNavigation("/profile")}>
           <div className="nav-icon">
             <img src="/assets/profile-icon.svg" alt="Profile" />
           </div>
